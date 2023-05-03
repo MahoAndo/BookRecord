@@ -96,12 +96,12 @@ function Record() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell component="th" scope="row">
+              <TableCell align="center" component="th" scope="row">
                 Title
               </TableCell>
-              <TableCell align="right">Star</TableCell>
-              <TableCell align="right">Detail</TableCell>
-              <TableCell align="right">Remove</TableCell>
+              <TableCell align="center">Star</TableCell>
+              <TableCell align="center">Detail</TableCell>
+              <TableCell align="center">Remove</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -110,14 +110,14 @@ function Record() {
                 key={item.title}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell component="th" scope="row">
+                <TableCell component="th" scope="row" align="center">
                   {item.title}
                 </TableCell>
-                <TableCell align="right">{item.star}</TableCell>
-                <TableCell align="right">
+                <TableCell align="center">{item.star}</TableCell>
+                <TableCell align="center">
                   <DetailButton row={item} handleOpen />
                 </TableCell>
-                <TableCell align="right">
+                <TableCell align="center">
                   <Button
                     variant="outlined"
                     color="primary"
